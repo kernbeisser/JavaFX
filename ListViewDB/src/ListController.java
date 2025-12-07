@@ -1,24 +1,38 @@
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ResourceBundle;
-
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
-public class ListController implements Initializable {
+public class ListController {
 
     @FXML
     private ListView<String> lstWizzards;
 
-    public void initialize(URL location, ResourceBundle resources) {
+       @FXML
+    private Button btnConnect;
+
+    @FXML
+    private PasswordField pwPassword;
+
+    @FXML
+    private TextField txtUserName;
+
+    @FXML
+    void onConnect(ActionEvent event) {
         DatabaseConnection dbConnect = new DatabaseConnection();
+        String userName = txtUserName.getText();
+        String password = pwPassword.getText();
 
-        Connection connection = dbConnect.getConnection();
-
+        // IO.println(userName);
+        // IO.println(password);
+        Connection connection = dbConnect.getConnection(userName, password);
+     
         String query = "select name, house, age from wizzards";
 
         try {
@@ -42,4 +56,5 @@ public class ListController implements Initializable {
             e.getMessage();
         }
     }
+
 }
