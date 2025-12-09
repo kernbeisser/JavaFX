@@ -7,10 +7,10 @@ public class DatabaseConnection {
 
     public Connection databaseLink;
 
-    public Connection getConnection() {
+    public Connection getConnection(String dbUser, String dbPassword) {
         String databaseName = "mysql";
-        String databaseUser = "...";
-        String databasePassword = "...";
+        String databaseUser = dbUser;
+        String databasePassword = dbPassword;
         
         String url = "jdbc:mysql://localhost:3306/" + databaseName;
 
