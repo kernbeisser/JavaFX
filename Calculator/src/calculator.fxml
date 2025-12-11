@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CalcController">
+   <children>
+      <HBox alignment="CENTER" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <Label text="Simple Calculator" textFill="#93c572">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane layoutX="177.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <TextField fx:id="txtZahl1" alignment="CENTER" layoutX="56.0" layoutY="71.0" />
+            <TextField fx:id="txtZahl2" alignment="CENTER" layoutX="56.0" layoutY="111.0" />
+            <TextField fx:id="txtResult" alignment="CENTER" layoutX="56.0" layoutY="179.0" prefHeight="26.0" prefWidth="249.0" />
+            <Button fx:id="btnAdd" layoutX="231.0" layoutY="70.0" mnemonicParsing="false" onAction="#onAdd" prefWidth="75.0" style="-fx-background-color: #D0F0C0;" text="Add" />
+            <Button fx:id="btnSub" layoutX="319.0" layoutY="70.0" mnemonicParsing="false" onAction="#onSub" prefWidth="75.0" style="-fx-background-color: #D0F0C0;" text="Sub" />
+            <Button fx:id="btnMty" layoutX="231.0" layoutY="110.0" mnemonicParsing="false" onAction="#onMty" prefWidth="75.0" style="-fx-background-color: #D0F0C0;" text="MTY" />
+            <Button fx:id="txtDiv" layoutX="317.0" layoutY="111.0" mnemonicParsing="false" onAction="#onDiv" prefWidth="75.0" style="-fx-background-color: #D0F0C0;" text="DIV" />
+            <Button layoutX="317.0" layoutY="177.0" mnemonicParsing="false" prefWidth="75.0" style="-fx-background-color: #D0F0C0;" text="MOD" />
+            <Button fx:id="btnQuit" layoutX="475.0" layoutY="256.0" mnemonicParsing="false" onAction="#onQuit" prefWidth="75.0" style="-fx-background-color: #D0F0C0;" text="Quit" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblStatus" layoutX="46.0" layoutY="369.0" text="Ready" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+   </children>
+</AnchorPane>
