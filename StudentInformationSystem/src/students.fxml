@@ -124,7 +124,7 @@
             <Font name="System Bold Italic" size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="rbBusinessAnakyst" layoutX="708.0" layoutY="166.0" mnemonicParsing="false" text="Bussiness Analyst">
+      <RadioButton fx:id="rbBusinessAnakyst" layoutX="708.0" layoutY="166.0" mnemonicParsing="false" text="Business Analyst">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font>
@@ -134,9 +134,10 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <ComboBox fx:id="cmbSunjects" layoutX="703.0" layoutY="249.0" prefWidth="150.0" />
-      <TextArea fx:id="tadisplay" layoutX="224.0" layoutY="664.0" prefHeight="461.0" prefWidth="932.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="425.0" />
-      <Button fx:id="btnQuit" layoutX="871.0" layoutY="861.0" mnemonicParsing="false" onAction="#onQuit" prefWidth="90.0" style="-fx-background-color: #8B0A1A; -fx-text-fill: #ffffff;" text="Quit" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <ComboBox fx:id="cmbSubjects" layoutX="703.0" layoutY="249.0" prefWidth="150.0" />
+      <TextArea fx:id="taDisplay" layoutX="224.0" layoutY="664.0" prefHeight="425.0" prefWidth="932.0" AnchorPane.bottomAnchor="57.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="425.0" />
+      <Button fx:id="btnQuit" layoutX="871.0" layoutY="861.0" mnemonicParsing="false" onAction="#onQuit" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #8B0A1A; -fx-text-fill: #ffffff;" text="Quit" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
       <Label fx:id="lblStatus" layoutX="53.0" layoutY="865.0" text="Ready" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+      <Button fx:id="btnClear" layoutX="748.0" layoutY="854.0" mnemonicParsing="false" onAction="#onClear" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #8B0A1A; -fx-text-fill: #ffffff;" text="Clear" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="130.0" />
    </children>
 </AnchorPane>
