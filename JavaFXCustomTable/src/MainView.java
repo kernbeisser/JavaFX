@@ -1,4 +1,5 @@
 import javafx.application.Application;
+import javafx.geometry.NodeOrientation;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
@@ -31,6 +32,10 @@ public class MainView extends Application {
         BorderPane root = new BorderPane();
         root.setCenter(new CreateCustomTable().getTable());
         root.setBottom(createButton());
+        
+        // Not specific to only one orientation like 'Bottom', it turns 
+        // all nodes.
+        // root.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
 
         return root;
     }
