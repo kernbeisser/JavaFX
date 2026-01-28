@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <Label fx:id="lblDice" alignment="CENTER" layoutX="14.0" layoutY="119.0" prefHeight="17.0" prefWidth="119.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="119.0">
+         <font>
+            <Font name="Arial" size="64.0" />
+         </font>
+      </Label>
+      <Button layoutX="276.0" layoutY="552.0" mnemonicParsing="false" onAction="#onClose" text="Close" AnchorPane.bottomAnchor="22.0" AnchorPane.rightAnchor="275.5" />
+      <Label alignment="CENTER" layoutX="300.0" layoutY="57.0" text="Dice Roll Simulator" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="37.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="225.0" layoutY="218.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onRoll" prefWidth="150.0" style="-fx-background-color: #47a5c4; -fx-text-fill: white;" text="Roll" AnchorPane.topAnchor="218.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="lstRolls" layoutX="100.0" layoutY="300.0" prefHeight="200.0" prefWidth="400.0" />
+   </children>
+</AnchorPane>
